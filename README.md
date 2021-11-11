@@ -1,4 +1,4 @@
-# munchkin-tracker
+# Munchkin Tracker
 Munchkin Tracker é um sistema auxiliar para o jogo Munchkin. Através dele é possivel gerenciar itens e calcular a força do personagem de forma automática.
 
 # Próximos Passos
