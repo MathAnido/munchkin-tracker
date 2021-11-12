@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <q-card class="card">
     <q-card-section>
       <div class="text-h6">Our Changing Planet</div>
@@ -12,6 +13,7 @@
       <q-btn flat>Action 2</q-btn>
     </q-card-actions>
   </q-card>
+</div>
 </template>
 
 <script>
@@ -24,7 +26,13 @@ export default defineComponent({
 </script>
 
 <style lang="sass" scoped>
+.container
+  display: flex
+  height: 100%
+  justify-content: center
+  align-items: center
+
 .card
   width: 100%
-  max-width: 250px
+  max-width: 20vw
 </style>
