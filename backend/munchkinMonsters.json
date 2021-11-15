@@ -1,0 +1,447 @@
+{
+  "monsters": [
+    {
+      "name": "Troll da internet",
+      "power": 10,
+      "treasures": 3,
+      "level": 1,
+      "bonus": []
+    },
+    {
+      "name": "Nerd histérico",
+      "power": 6,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "warrior",
+          "power": 6
+        }
+      ]
+    },
+    {
+      "name": "Gorfomón",
+      "power": 6,
+      "treasures": 2,
+      "level": 1,
+      "bonus": []
+    },
+    {
+      "name": "Manticornitorrinco",
+      "power": 6,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "mage",
+          "power": 6
+        }
+      ]
+    },
+    {
+      "name": "Goblin Aleijado",
+      "power": 1,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "",
+          "power": 1
+        }
+      ]
+    },
+    {
+      "name": "Chupa cara",
+      "power": 8,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "elf",
+          "power": 6
+        }
+      ]
+    },
+    {
+      "name": "Balrog",
+      "power": 18,
+      "treasures": 5,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "insta",
+          "power": 4
+        }
+      ]
+    },
+    {
+      "name": "Rãs voadoras",
+      "power": 2,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "",
+          "power": -1
+        }
+      ]
+    },
+    {
+      "name": "Carrapatos",
+      "power": 1,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": "notAllowed"
+        }
+      ]
+    },
+    {
+      "name": "Vendedor de seguros",
+      "power": 14,
+      "treasures": 4,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "bonusOnly"
+        }
+      ]
+    },
+    {
+      "name": "Gosma grudenta",
+      "power": 1,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "elf",
+          "power": 4
+        }
+      ]
+    },
+    {
+      "name": "Golem de pedra",
+      "power": 14,
+      "treasures": 4,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "halfling",
+          "power": "notAllowed"
+        }
+      ]
+    },
+    {
+      "name": "Paga pau de vampiro",
+      "power": 12,
+      "treasures": 3,
+      "level": 1
+    },
+    {
+      "name": "Coreto aterrorizante",
+      "power": 8,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "help",
+          "value": "all",
+          "power": "notAllowed"
+        }
+      ]
+    },
+    {
+      "name": "Polvozilla",
+      "power": 18,
+      "treasures": 4,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "elf",
+          "power": -4
+        },
+        {
+          "type": "run",
+          "value": "insta",
+          "power": 4
+        }
+      ]
+    },
+    {
+      "name": "3.872 orcs",
+      "power": 10,
+      "treasures": 3,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "dwarf",
+          "power": 6
+        }
+      ]
+    },
+    {
+      "name": "Amazona",
+      "power": 8,
+      "treasures": 2,
+      "level": 1
+    },
+    {
+      "name": "Pit bull",
+      "power": 2,
+      "treasures": 1,
+      "level": 1
+    },
+    {
+      "name": "Pé grande",
+      "power": 12,
+      "treasures": 3,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "dwarf",
+          "power": 3
+        },
+        {
+          "type": "race",
+          "value": "halfling",
+          "power": 3
+        }
+      ]
+    },
+    {
+      "name": "Hipopógrifo",
+      "power": 16,
+      "treasures": 24,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "insta",
+          "power": 3
+        }
+      ]
+    },
+    {
+      "name": "Advogados",
+      "power": 6,
+      "treasures": 2,
+      "level": 1
+    },
+    {
+      "name": "Nariz flutuante",
+      "power": 10,
+      "treasures": 3,
+      "level": 1
+    },
+    {
+      "name": "Manticornitorrinco",
+      "power": 6,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "mage",
+          "power": 6
+        }
+      ]
+    },
+    {
+      "name": "Octaedro gelatinoso",
+      "power": 2,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": 1
+        }
+      ]
+    },
+    {
+      "name": "Ratricinha com porrete",
+      "power": 1,
+      "treasures": 1,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "cleric",
+          "power": 3
+        }
+      ]
+    },
+    {
+      "name": "João do caixão",
+      "power": 2,
+      "treasures": 1,
+      "level": 1
+    },
+    {
+      "name": "Noivampiras",
+      "power": 8,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "levelOnly"
+        }
+      ]
+    },
+    {
+      "name": "Duende leproso",
+      "power": 4,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "elf",
+          "power": 5
+        }
+      ]
+    },
+    {
+      "name": "Noivampiras",
+      "power": 8,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "levelOnly"
+        }
+      ]
+    },
+    {
+      "name": "Dragão de plutônio",
+      "power": 20,
+      "treasures": 5,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": 5
+        }
+      ]
+    },
+    {
+      "name": "Galinha anabolizada",
+      "power": 2,
+      "treasures": 1,
+      "level": 1
+    },
+    {
+      "name": "Cavalo zumbi",
+      "power": 4,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "race",
+          "value": "dwarf",
+          "power": 5
+        }
+      ]
+    },
+    {
+      "name": "Vaso de planta",
+      "power": 1,
+      "treasures": 1,
+      "level": 1
+    },
+    {
+      "name": "Rei tut",
+      "power": 16,
+      "treasures": 4,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": 3
+        }
+      ]
+    },
+    {
+      "name": "Tíbio e perônio cirugia ortopédica",
+      "power": 16,
+      "treasures": 4,
+      "level": 2,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": 3
+        }
+      ]
+    },
+    {
+      "name": "Demônia linguaruda",
+      "power": 12,
+      "treasures": 3,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "cleric",
+          "power": 4
+        }
+      ]
+    },
+    {
+      "name": "Horror aterrorizante indescritivelmente indescritivel",
+      "power": 14,
+      "treasures": 4,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "warrior",
+          "power": 4
+        }
+      ]
+    },
+    {
+      "name": "Harpias",
+      "power": 4,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "class",
+          "value": "mage",
+          "power": 5
+        }
+      ]
+    },
+    {
+      "name": "Lesmas velozes",
+      "power": 4,
+      "treasures": 2,
+      "level": 1,
+      "bonus": [
+        {
+          "type": "run",
+          "value": "all",
+          "power": -2
+        }
+      ]
+    }
+  ]
+}

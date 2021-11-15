@@ -1,0 +1,24 @@
+{
+  "name": "munchkin-tracker-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --ext js,graphql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^7.3.3",
+    "@graphql-tools/load": "^7.4.1",
+    "apollo-server": "^3.5.0",
+    "axios": "^0.24.0",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "graphql-tools": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

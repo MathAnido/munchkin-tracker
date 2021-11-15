@@ -1,0 +1,13 @@
+type Monster {
+  name: String!
+  power: Int!
+  treasures: Int!
+  level: Int!
+  bonus: [Bonus]
+}
+
+type Bonus {
+  type: String!
+  value: String
+  power: Int
+}
