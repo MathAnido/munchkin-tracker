@@ -1,9 +1,10 @@
 import { store } from 'quasar/wrappers'
 import { createStore } from 'vuex'
+import cards from './cards'
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
-      // example
+      cards
     },
 
     // enable strict mode (adds overhead!)
