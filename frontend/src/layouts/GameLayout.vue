@@ -43,12 +43,20 @@
           <q-avatar size="56px" class="q-mb-sm">
             <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
           </q-avatar>
-          <div class="text-weight-bold">Razvan Stoenescu</div>
-          <div>@rstoenescu</div>
+          <div class="text-weight-bold" @click="toggleEditMode" v-if="!editMode">{{ this.getUsername }}</div>
+          <div v-else>
+            <q-input standout bottom-slots v-model="username" label="Usuário" maxlength="12" dense>
+            <template v-slot:append>
+              <q-icon v-if="username !== ''" name="close" @click="username = ''" class="cursor-pointer" />
+            </template>
+            <template v-slot:after>
+              <q-btn round dense flat icon="send" @click="setUsername" />
+            </template>
+          </q-input>
+          </div>
         </div>
       </q-img>
     </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
@@ -100,16 +108,42 @@ export default defineComponent({
     Link,
   },
 
-  setup() {
-    const leftDrawerOpen = ref(false);
-
+  data () {
     return {
+      username: 'nome de usuário',
+      newUsername: '',
       linksList: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
-    };
+      leftDrawerOpen: false,
+      editMode: false
+    }
   },
+
+  created () {
+    const username = localStorage.getItem('username')
+    this.username = username ? username : 'nome de usuário'
+  },
+
+  computed: {
+    getUsername () {
+      return this.username
+    }
+  },
+
+  methods: {
+    toggleLeftDrawer () {
+      this.leftDrawerOpen = !this.leftDrawerOpen
+    },
+
+    toggleEditMode () {
+      this.editMode = !this.editMode
+    },
+
+    setUsername () {
+      if(this.username !== ''){
+        localStorage.setItem('username', this.username)
+        this.toggleEditMode()
+      }
+    }
+  }
 });
 </script>
