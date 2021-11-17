@@ -9,25 +9,61 @@
       <q-separator />
 
       <q-card-actions vertical>
-        <q-btn flat>Action 1</q-btn>
-        <q-btn flat>Action 2</q-btn>
+        <q-btn @click="this.$router.push('game')" flat>Criar Partida</q-btn>
+        <q-btn @click="toggleShowDialog" flat>Juntar-se a Partida</q-btn>
       </q-card-actions>
     </q-card>
-  </div>
+  
+
+  <q-dialog v-model="showDialog">
+    <q-card style="min-width: 350px">
+      <q-card-section>
+        <div class="text-h6">ID da Sala</div>
+      </q-card-section>
+
+      <q-card-section class="q-pt-none">
+        <q-input dense v-model="sala" autofocus
+        :rules="[ () => !Number.isNaN(this.getNumeroSala) || 'Número Inválido']"/>
+      </q-card-section>
+
+      <q-card-actions align="right" class="text-primary">
+        <q-btn flat label="Cancelar" @click="toggleShowDialog"/>
+        <q-btn flat label="Entrar" @click="verificarEntrada"/>
+      </q-card-actions>
+    </q-card>
+  </q-dialog>
+</div>
 </template>
 
 <script>
 import { defineComponent } from "vue";
-import { mapActions } from "vuex";
 
 export default defineComponent({
   name: "mainPage",
   components: {},
-  methods: {
-    ...mapActions(['fetchMonsters']),
+  data(){
+    return{
+      showDialog: false,
+      sala:''
+    }
   },
-  created() {
-    this.fetchMonsters()
+  computed:{
+    getNumeroSala(){
+      return parseInt(this.sala)
+    }
+  },
+  methods: {
+    verificarEntrada(){
+      if(this.sala !== ''){
+        if(Number.isNaN(this.getNumeroSala))
+          return
+        this.$router.push({ name: 'game', params: {sala:this.getNumeroSala} })
+      }
+    },
+    toggleShowDialog(){
+      this.sala=''
+      this.showDialog = !this.showDialog
+    }
   },
 });
 </script>

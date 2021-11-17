@@ -14,7 +14,7 @@
         <q-toolbar-title> Munchkin Tracker </q-toolbar-title>
         <div>
           <span>Sala: </span>
-          123121
+          {{this.numeroSala}}
         </div>
       </q-toolbar>
     </q-header>
@@ -103,7 +103,12 @@ import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   name: "GameLayout",
-
+  props: {
+    sala:{
+      type:Number,
+      required:true
+    }
+  },
   components: {
     Link,
   },
@@ -118,12 +123,18 @@ export default defineComponent({
     }
   },
 
-  created () {
+   created () {
     const username = localStorage.getItem('username')
     this.username = username ? username : 'nome de usuário'
   },
 
   computed: {
+    numeroSala(){
+      if(this.sala){
+        return this.sala
+      }
+      return ''
+    },
     getUsername () {
       return this.username
     }

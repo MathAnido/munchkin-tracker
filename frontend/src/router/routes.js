@@ -9,7 +9,9 @@ const routes = [
   },
   {
     path: '/game',
+    name:'game',
     component: () => import('layouts/GameLayout.vue'),
+    props:true,
     children: [
       { path: '', component: () => import('pages/game/game.vue') }
     ]
