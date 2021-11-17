@@ -22,16 +22,17 @@
       </q-card-section>
 
       <q-card-section class="q-pt-none">
-        <q-input dense v-model="sala" autofocus
+        <q-input mask="#####" hint="Exemplo ID: 12345" dense v-model="sala" autofocus
         :rules="[ () => !Number.isNaN(this.getNumeroSala) || 'Número Inválido']"/>
       </q-card-section>
 
       <q-card-actions align="right" class="text-primary">
         <q-btn flat label="Cancelar" @click="toggleShowDialog"/>
-        <q-btn flat label="Entrar" @click="verificarEntrada"/>
+        <q-btn color="primary" label="Entrar" @click="verificarEntrada"/>
       </q-card-actions>
     </q-card>
   </q-dialog>
+
 </div>
 </template>
 
